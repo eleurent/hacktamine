@@ -1,0 +1,86 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "11leuren", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2013-04-04T21:34:27", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$wNYTcT8WmIfV$mUs+QQOerYGe+O+e6GFU6cco2LhooRfginJWrkDzm8s=", 
+            "email": "11leuren@ensmp.fr", 
+            "date_joined": "2013-03-10T23:40:13"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "12lafarg", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2013-04-04T21:15:48", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$YOBTm7xHIRDn$j47zf+1cICZah5i6sTNenMptdpOa5x9Hk/heYRQYxEw=", 
+            "email": "", 
+            "date_joined": "2013-04-04T16:24:59"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "12caner", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2013-04-04T20:27:04", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$te5yrzAhQQt9$5CQPu0oLS2TcAm8KFudGzDI4toswzFVpyrUgsXesSmg=", 
+            "email": "", 
+            "date_joined": "2013-04-04T16:25:31"
+        }
+    }
+    {
+        "pk": 1, 
+        "model": "profile.userprofile", 
+        "fields": {
+            "first_name": "Edouard", 
+            "last_name": "Leurent", 
+            "user": 1, 
+            "team": "ShiFuMine"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "profile.userprofile", 
+        "fields": {
+            "first_name": "Etienne", 
+            "last_name": "Lafarge", 
+            "user": 6, 
+            "team": "Dynamine"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "profile.userprofile", 
+        "fields": {
+            "first_name": "Guillaume", 
+            "last_name": "Caner", 
+            "user": 7, 
+            "team": "Tsunamine"
+        }
+    }
+]

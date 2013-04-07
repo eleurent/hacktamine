@@ -1,0 +1,17 @@
+<div class = "menu">
+<ul>
+<li><a href="/">Règles</a></li>
+<li><a href="/solve/">Résoudre</a></li>
+<li><a href="/dashboard/">Tableau de bord</a></li>
+{% if user.is_staff %}
+<li><a href="/admin/">Administration</a></li>
+{% endif %}
+{% if user.is_authenticated %}
+<li><a href="/accounts/logout/">Se déconnecter</a></li>
+{% else %}
+<li><a href="/accounts/login/">Se connecter</a></li>
+{% endif %}
+<li style="color:#DDD; float:right; margin:8px 15px; font-size:1.3em; font-family:Arial">Epreuve VP Geek</li>
+<br style="clear:left;">
+</ul>
+</div>

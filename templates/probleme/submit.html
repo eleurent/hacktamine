@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block header %}
+<link rel="stylesheet" href="{{ STATIC_URL }}codemirror.css">
+<script src="{{ STATIC_URL }}codemirror.js"></script>
+<script src="{{ STATIC_URL }}matchbrackets.js"></script>
+<script src="{{ STATIC_URL }}clike.js"></script>
+<link rel="stylesheet" href="{{ STATIC_URL }}docs.css">
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+{% endblock %}
+
+{% block content %}
+<h1>Problème {{ probleme.numero }}</h1>
+<h3>Enoncé</h3>
+<div id="enonce">{{ probleme.enonce|safe }}</div>
+
+<h3>Soumettre une solution</h3>
+<form method = "post" action="" id="submit-form">
+{% csrf_token %}
+<textarea name="source" id="source">
+{% if last_solution %}{{ last_solution.source }}
+{% else %}import java.util.*;
+class {{ request.user.get_profile.first_name }} {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+  }
+}
+{% endif %}
+</textarea>
+<p><br/></p>
+<input type="submit"/>
+</form>
+<p><br/></p>
+
+ <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("source"), {
+        lineNumbers: true,
+        matchBrackets: true,		
+        mode: "text/x-java"
+      });
+    </script>
+{% endblock %}

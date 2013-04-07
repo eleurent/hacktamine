@@ -1,0 +1,16 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{ STATIC_URL }}styles.css">
+{% block header %}
+{% endblock%}
+</head>
+<body>
+<div id="wrapper">
+{% include "menu.html" %}
+<div id="content">
+{% block content %}
+{% endblock %}
+</div>
+</div>
+</body>
+</html>

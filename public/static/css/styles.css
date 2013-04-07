@@ -1,0 +1,135 @@
+h1 {
+	text-align:center;
+	margin-top:0;	
+}
+
+a {
+	color: #4A90BC;
+	text-decoration: none;
+}
+
+#wrapper {
+	width:960px;
+	margin:0 auto;
+}
+
+#content {
+	padding:15px;
+	background-color:#F9F9F9;
+	overflow: auto;
+}
+
+.menu{
+    width: 100%;
+    background-color: #333; }
+	
+.menu ul{
+    margin: 0; padding: 0;
+    }
+ 
+.menu ul li{
+    display: inline;}
+ 
+.menu ul li a{
+    float: left; text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #333; }
+ 
+.menu ul li a:visited{
+    color: white;}
+ 
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;}
+	
+.valid {
+	background-color:#9F5;
+}
+
+.compiling-error, .running-error, .timeout{
+	background-color:#F30;
+}
+
+.running, .compiling, .bad-result {
+	background-color:#FA0;
+}
+
+.dashboard {
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+}
+
+#submit-form input {
+	height:30px; 
+    width:100px; 
+    margin: -30px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+	font-size:12pt;
+}
+
+.separator {
+float:right;
+background-color:#000;
+width:5px;
+margin:0 33px;
+}
+
+.duel {
+width:100%;
+}
+
+.over {
+	background-color:#9F5;
+}
+
+.duel-joueur-1 {
+	width:48%;
+	float:left;
+	padding:0 5px;
+
+}
+
+.duel-joueur-2{
+	width:48%;
+	float:right;
+	padding:0 5px;
+}
+
+.joueur {
+text-align:center;
+}
+
+.logo {
+height:160px;
+}
+
+.joueur h1 {
+margin: 0;
+}
+.joueur h2 {
+margin-top: 2px;
+}
+
+#enonce table {
+	border:1px solid #1A5CC8;
+	border-collapse:collapse;
+	margin:10px;
+}
+
+#enonce table tr th {
+	border:1px solid #1A5CC8;
+	border-collapse:collapse;
+	vertical-align:top;
+	color:#1A5CC8;
+	width:350px;
+}
+#enonce table tr td {
+	border:1px solid #1A5CC8;
+	border-collapse:collapse;
+	vertical-align:top;
+	padding:5px;
+}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block header %}
+<script src="{{ STATIC_URL }}jquery-1.6.2.min.js"></script>
+<script src="{{ STATIC_URL }}html-crc-reload.js"></script>
+{% endblock %}
+{% block content %}
+<div class = "duel">
+<div class = "duel-joueur-1 {% if duel.joueur1.get_profile.probleme %}{% else %}over{% endif %}">
+<div class = "joueur">
+<img class = "logo" src = "{{ STATIC_URL }}{{ duel.joueur1.get_profile.team }}.png">
+<!--<h1>{{ duel.joueur1.get_profile.team }}</h1>-->
+<h1>{{ duel.joueur1.get_profile.first_name }} {{ duel.joueur1.get_profile.last_name }}</h1>
+<h2>{% if duel.joueur1.get_profile.probleme %}Problème {{ duel.joueur1.get_profile.probleme.numero }}{% else %}Terminé !{% endif %}</h2>
+</div>
+<table class = "dashboard">
+<thead>
+<tr>
+<td>Heure</td>
+<td>Probleme</td>
+<td>Status</td>
+</tr>
+</thead>
+<tbody>
+{% for solution in solutions_joueur1_list %}
+<tr class="{{ solution.status }}">
+<td>{{ solution.date|time:"H:i:s" }}</td>
+<td>{{ solution.probleme.numero }}</td>
+<td>{{ solution.status }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div class = "duel-joueur-2 {% if duel.joueur2.get_profile.probleme %}{% else %}over{% endif %}">
+<div class = "joueur">
+<img class = "logo" src = "{{ STATIC_URL }}{{ duel.joueur2.get_profile.team }}.png">
+<!--<h1>{{ duel.joueur2.get_profile.team }}</h1>-->
+<h1>{{ duel.joueur2.get_profile.first_name }} {{ duel.joueur2.get_profile.last_name }}</h1>
+<h2>{% if duel.joueur2.get_profile.probleme %}Problème {{ duel.joueur2.get_profile.probleme.numero }}{% else %}Terminé !{% endif %}</h2>
+</div>
+<table class = "dashboard">
+<thead>
+<tr>
+<td>Heure</td>
+<td>Probleme</td>
+<td>Status</td>
+</tr>
+</thead>
+<tbody>
+{% for solution in solutions_joueur2_list %}
+<tr class="{{ solution.status }}">
+<td>{{ solution.date|time:"H:i:s" }}</td>
+<td>{{ solution.probleme.numero }}</td>
+<td>{{ solution.status }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<!--<div class="separator">
+</div>-->
+</div>
+{% endblock %}

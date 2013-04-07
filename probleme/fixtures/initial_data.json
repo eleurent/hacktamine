@@ -1,0 +1,169 @@
+[
+    {
+        "pk": 5, 
+        "model": "probleme.probleme", 
+        "fields": {
+            "enonce": "<p>Calculer a + b.</p>\r\n<p><strong>Input</strong> : deux entiers a et b<br/>\r\n<strong>Output</strong> : la somme a+b</p>\r\n<p><strong>Exemple</strong> : </p>\r\n<table>\r\n<tr>\r\n<td>Input</td>\r\n<td>Output</td>\r\n</tr>\r\n<tr>\r\n<td>2 3</td>\r\n<td>5</td>\r\n</tr>\r\n</table>", 
+            "difficulte": 1, 
+            "reussi": [
+                1
+            ]
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "probleme.probleme", 
+        "fields": {
+            "enonce": "<p>D\u00e9terminer si un nombre est un palindrome.</p>\r\n<p><strong>Input</strong> : un nombre entier<br/>\r\n<strong>Output</strong> : \u00ab Palindrome ! \u00bb si le nombre est un palindrome, et \u00ab Non palindrome \u00bb sinon</p>\r\n<p><strong>Exemple</strong> : </p>\r\n<table>\r\n<tr>\r\n<th>Input</th>\r\n<th>Output</th>\r\n</tr>\r\n<tr>\r\n<td>1331</td>\r\n<td>Palindrome !</td>\r\n</tr>\r\n</table>\r\n<table>\r\n<tr>\r\n<th>Input</th>\r\n<th>Output</th>\r\n</tr>\r\n<tr>\r\n<td>1337</td>\r\n<td>Non palindrome</td>\r\n</tr>\r\n</table>\r\n", 
+            "difficulte": 2, 
+            "reussi": [
+                1
+            ]
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "probleme.probleme", 
+        "fields": {
+            "enonce": "<p>T\u2019as d\u00e9j\u00e0 jou\u00e9 au d\u00e9Mineur ? On consid\u00e8re une grille de taille NxM sur laquelle on place des Mines. Ta mission est de d\u00e9terminer combien de mines sont adjacentes \u00e0 chacune des cases de la grille.</p>\r\n<p><strong>Input</strong> : La premi\u00e8re ligne contient les dimensions N et M de la grille, et les lignes suivantes repr\u00e9sentent la grille. Une mine est not\u00e9e \u00ab * \u00bb, et une case sans mine est not\u00e9e \u00ab - \u00bb<br/>\r\n<strong>Output</strong> : Les lignes repr\u00e9sentant la grille, en repla\u00e7ant les \u00ab - \u00bb par le nombre de mines adjacentes \u00e0 cette case.</p>\r\n<p>Exemple : </p>\r\n<table>\r\n<tr>\r\n<th>Input</th>\r\n<th>Output</th>\r\n</tr>\r\n<tr>\r\n<td>4 4<br/>\r\n*---<br/>\r\n----<br/>\r\n-*--<br/>\r\n----<br/>\r\n</td>\r\n<td>*100<br/>\r\n2210<br/>\r\n1*10<br/>\r\n1110<br/>\r\n</td>\r\n</tr>\r\n</table>", 
+            "difficulte": 3, 
+            "reussi": [
+                1
+            ]
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "probleme.probleme", 
+        "fields": {
+            "enonce": "<p>Mamoun Tahri aime prendre le taxi. Pas seulement pour le plaisir d\u2019un trajet rapide et confortable, mais pour la possibilit\u00e9 de marchander avec le chauffeur. Le marchandage se passe toujours de la m\u00eame mani\u00e8re :</p>\r\n<p>\u2014 A l\u2019a\u00e9roport! Je vous paierai 5\u20ac.<br/>\r\n\u2014 Non, je ne vous prends pas pour 5\u20ac. Disons 80\u20ac.<br/>\r\n\u2014 Vous \u00eates fou ? Je n\u2019ai pas autant sur moi! Bon, 15\u20ac ?<br/>\r\n\u2014 Vous rigolez ? Pas en dessous de 75\u20ac.<br/>\r\n\u2014 Eh bien je vous en donnerais 25\u20ac.<br/>\r\n\u2014 Monsieur, vous connaissez le prix de l\u2019essence ? Payez 70\u20ac et on y va !<br/>\r\n...</p>\r\n<p>Le dialogue continue jusqu\u2019\u00e0 ce qu\u2019ils se mettent d\u2019accord sur le prix. Mamoun augmente toujours son prix du m\u00eame montant, et le chauffeur en fait autant. Bien s\u00fbr, le chauffeur ne demandera pas un prix inf\u00e9rieur \u00e0 la derni\u00e8re offre de Mamoun, il acceptera alors son offre. Mamoun se comporte de la m\u00eame mani\u00e8re</p>\r\n\r\n<p><strong>Input</strong> : Un ligne contenant quatre entiers: l\u2019offre initiale de Mamoun, le montant avec lequel Mamoun monte son prix, l\u2019offre initiale du chauffeur, et le montant des r\u00e9ductions du chauffeur.<br/>\r\n<strong>Output</strong> : Le prix que paiera Mamoun au chauffeur de taxi.</p>\r\n<p><strong>Exemple</strong> : </p>\r\n<table>\r\n<tr>\r\n<th>Input</th>\r\n<th>Output</th>\r\n</tr>\r\n<tr>\r\n<td>5 10 80 5</td>\r\n<td>55</td>\r\n</tr>\r\n</table>", 
+            "difficulte": 4, 
+            "reussi": [
+                1
+            ]
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "probleme.probleme", 
+        "fields": {
+            "enonce": "<p>Comme tout le monde la sait, la proportion de filles aux Mines est de 50% exactement. Dans la promotion 2012, certains mineurs aiment certaines minettes. Mais les mineurs sont tous des gentlemen et donc un mineur ne peut aimer qu\u2019une seule minette, et une minette ne peut \u00eatre aim\u00e9e que par un seul mineur. R\u00e9ciproquement, les minettes sont \u00e9galement toutes de vraies dames et ont le m\u00eame comportement.</p>\r\n<p>Dans le bus du WEI, il faut s\u2019assoir deux par deux. Aide les mineurs \u00e0 former des paires gar\u00e7on/filles telles qu'au moins un des deux voisins soit assis \u00e0 c\u00f4t\u00e9 de l'\u00e9lu de son coeur<br/>\r\nOn num\u00e9rote les gar\u00e7ons de 1 \u00e0 N et les filles de 1 \u00e0 N.</p>\r\n\r\n<p><strong>Input</strong></p>\r\n<p>La premi\u00e8re ligne contient N, le nombre de filles, qui est aussi le nombre de gar\u00e7on (la promotion compte donc 2N \u00e9l\u00e8ves).<br/>\r\nLa deuxi\u00e8me ligne contient les num\u00e9ros des filles qu\u2019aiment les gar\u00e7ons : si le gar\u00e7on k aime une fille, le num\u00e9ro de celle-ci sera \u00e0 la k\u00e8me position. S\u2019il n\u2019aime personne, il y aura 0 \u00e0 la k\u00e8me position. Les nombres sont s\u00e9par\u00e9s par des espaces.<br/>\r\nLa troisi\u00e8me ligne contient les informations analogues pour les filles.</p>\r\n<p><strong>Output</strong> : Une s\u00e9quence de N entiers, ou le k\u00e8me entier est le num\u00e9ro de la fille assise \u00e0 c\u00f4t\u00e9 du k\u00e8me gar\u00e7on.</p>\r\n<p><strong>Exemple</strong> : </p>\r\n<table>\r\n<tr>\r\n<th>Input</th>\r\n<th>Output</th>\r\n</tr>\r\n<tr>\r\n<td>3<br/>\r\n3 0 0<br/>\r\n0 2 0<br/>\r\n</td>\r\n<td>3 2 1</td>\r\n</tr>\r\n</table>", 
+            "difficulte": 5, 
+            "reussi": []
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "probleme.duel", 
+        "fields": {
+            "joueur1": 6, 
+            "joueur2": 7, 
+            "problemes": [
+                5, 
+                6, 
+                7, 
+                8, 
+                9
+            ]
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "10 15", 
+            "probleme": 5, 
+            "output": "25"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "-128 129", 
+            "probleme": 5, 
+            "output": "1"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "6556", 
+            "probleme": 6, 
+            "output": "Palindrome !"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "19091", 
+            "probleme": 6, 
+            "output": "Palindrome !"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "112", 
+            "probleme": 6, 
+            "output": "Non palindrome"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "4 4\r\n*---\r\n----\r\n-*--\r\n----", 
+            "probleme": 7, 
+            "output": "*100\r\n2210\r\n1*10\r\n1110"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "4 3 6 1", 
+            "probleme": 8, 
+            "output": "6"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "150 50 1000 100", 
+            "probleme": 8, 
+            "output": "450"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "3\r\n1 0 0\r\n0 3 0", 
+            "probleme": 9, 
+            "output": "1 3 2"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "1", 
+            "probleme": 6, 
+            "output": "Palindrome !"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "probleme.test", 
+        "fields": {
+            "input": "6 6\r\n-----*\r\n----*-\r\n------\r\n*----*\r\n--*---\r\n----*-", 
+            "probleme": 7, 
+            "output": "00012*\r\n0001*2\r\n110122\r\n*2111*\r\n12*222\r\n0112*1"
+        }
+    }
+]

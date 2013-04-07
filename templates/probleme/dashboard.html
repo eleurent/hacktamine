@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block header %}
+<script src="{{ STATIC_URL }}jquery-1.6.2.min.js"></script>
+<script src="{{ STATIC_URL }}html-crc-reload.js"></script>
+{% endblock %}
+{% block content %}
+<table class = "dashboard">
+<thead>
+<tr>
+<td>Utilisateur</td>
+<td>Heure</td>
+<td>Probleme</td>
+<td>Status</td>
+</tr>
+</thead>
+<tbody>
+{% for solution in solutions_list %}
+<tr class="{{ solution.status }}">
+<td>{{ solution.user.get_profile }}</td>
+<td>{{ solution.date|time:"H:i:s" }}</td>
+<td>{{ solution.probleme.numero }}</td>
+<td>{{ solution.status }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}

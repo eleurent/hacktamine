@@ -1,0 +1,15 @@
+<p>Calculer a + b.</p>
+<p><strong>Input</strong> : deux entiers a et b<br/>
+<strong>Output</strong> : la somme a+b</p>
+<p>Exemple : </p>
+<table>
+<th>
+<td>Input</td>
+<td>Output</td>
+</th>
+<tr>
+<td>2 3</td>
+<td>5</td>
+</tr>
+</table>
+
